@@ -1,18 +1,35 @@
 /*
  * TicketMachine.cpp
  *
- *  Created on: 2021年6月8日
+ *  Created on: 2021年6月12日
  *      Author: timo
  */
 
 #include "TicketMachine.h"
+#include <iostream>
+using namespace std;
 
-TicketMachine::TicketMachine() {
-	// TODO Auto-generated constructor stub
+//构造函数
+TicketMachine::TicketMachine() : PRICE(0),balance(0),total(0){//初始化
+    //TODO:
+}
+TicketMachine::~TicketMachine(){//析构函数
 
 }
 
-TicketMachine::~TicketMachine() {
-	// TODO Auto-generated destructor stub
+void TicketMachine::showPrompt()
+{
+    cout<<"something";
 }
+
+void TicketMachine::insertMoney(int money)
+{
+    balance +=money;
+}
+
+void TicketMachine::showBalance()
+{
+    cout<<balance;
+}
+
 
