@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 using namespace std;
-
 class Solution {
 public:
     int removeDuplicates(std::vector<int>& nums) {
@@ -18,14 +17,40 @@ public:
             }
             ++fast;
         }
+        cout << "数组为：";
+        cout << "[" ;
+        for (int i = 0; i < slow; i++){
+            cout << nums[i] ;
+            if ( i < slow-1)
+            {
+                cout << "," ;
+                }
+            }  
+        cout << "]" << endl;
+        cout << "数组长度为：";
+        cout << slow << endl;
         return slow;
+        
     }
 };
 
 int main()
+
 {
-   nums =  [1,1,2];
-   Solution::removeDuplicates(nums);
+   Solution so;
+   int a[] = { 0 ,  1 ,  1 ,  2 ,  4 };
+   vector<int> su(a,a+5);
+   //在su中添加a的6个元素
+   std::vector<int> nVec;
+   nVec.push_back(1);
+   nVec.push_back(1);
+   nVec.push_back(2);
+   nVec.push_back(3);
+   nVec.push_back(4);
+  //逐个第二种方式压入元素
+   for (int i = 0; i < su.size(); i++)
+        cout << su[i] << endl;
+   so.removeDuplicates(su);
+   cout << su.size() << endl;
    return 0;
 }
-
