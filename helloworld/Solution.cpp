@@ -48,8 +48,10 @@ int main()
    nVec.push_back(3);
    nVec.push_back(4);
   //逐个第二种方式压入元素
-   for (int i = 0; i < su.size(); i++)
-        cout << su[i] << endl;
+  // for (int i = 0; i < su.size(); i++)
+  //    cout << su[i] << endl;
+
+
    so.removeDuplicates(su);
    cout << su.size() << endl;
    return 0;
