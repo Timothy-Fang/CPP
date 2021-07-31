@@ -1,2 +1,2 @@
-# Practise
+# CPP
 C++
