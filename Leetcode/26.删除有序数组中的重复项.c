@@ -20,7 +20,7 @@ int removeDuplicates(int* nums, int numsSize) {
         }
         ++fast;
     }
-    printf ("数组长度为：%d",slow);   //这里为什么%d后面加不加\n差10倍
+    printf ("数组长度为：%d",slow);   //这里为什么%d后面加不加\n差10倍，因为换行影响数组输出的0上来了
     for(int i=0; i<slow; i++) //有几个单元 i就<几，如果大于单元数就结束循环
     printf("%d\n",nums[i]);
     //printf ("当前数组: %d", nums);
