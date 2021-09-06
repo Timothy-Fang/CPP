@@ -19,7 +19,9 @@ class Solution:
             fast += 1
         ##for i in (slow,nums):
         print ('数组长度为 :', slow)
-        print ('当前数组:', nums)
+        print ('当前数组:', nums) 
+        print ('当前数组:', nums[0:slow])
+        a = nums[slow-1] 
         return slow
 
 List=[0,1,1,2,2,3]
